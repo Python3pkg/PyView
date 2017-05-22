@@ -8,7 +8,7 @@ except ImportError:
 import numpy as np
 from threading import Thread
 
-import widgets
+from . import widgets
 
 ###### PYVIEW CLASSES ######
 
@@ -110,7 +110,7 @@ class Controller(object):
         if self.worker and obj.single_threaded:
             pass
         else:
-	        program_name = obj.func_name
+	        program_name = obj.__name__
 	        self.run_program(program_name)
 
     def run_program(self, program_name=''):

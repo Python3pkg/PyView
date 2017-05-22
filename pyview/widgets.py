@@ -18,7 +18,7 @@ class Button(wx.Button):
     """Extension of the Button Widget.
     Bind to function 'func' and run every time the button is pushed."""
     def __init__(self, func_name, label='', single_threaded=True):
-        self.func_name = func_name
+        self.__name__ = func_name
         self.single_threaded = single_threaded
 
         self.label = label

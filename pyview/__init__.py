@@ -1,6 +1,6 @@
 # import core functions
-from widgets import *
-from mvc import *
+from .widgets import *
+from .mvc import *
 
 # remove external access to internal modules
 del widgets, mvc

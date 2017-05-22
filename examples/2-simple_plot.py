@@ -22,7 +22,7 @@ class model:
         self.ind.append(self.count)
         self.result.append(res)
 
-        print('{0} {1} {2} = {3}'.format(self.first, self.op, self.second, res))
+        print(('{0} {1} {2} = {3}'.format(self.first, self.op, self.second, res)))
         pv.update()
 
 

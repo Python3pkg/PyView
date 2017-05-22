@@ -15,7 +15,7 @@ class model:
         elif self.op == 'subtract':
             self.result = operator.sub(self.first, self.second)
         
-        print('{0} {1} {2} = {3}'.format(self.first, self.op, self.second, self.result))
+        print(('{0} {1} {2} = {3}'.format(self.first, self.op, self.second, self.result)))
         pv.update()
 
 
